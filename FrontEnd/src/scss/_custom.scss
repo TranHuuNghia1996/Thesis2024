@@ -1,0 +1,34 @@
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px; /* Đặt chiều cao tối đa lớn hơn nếu cần */
+  }
+  
+  .table-content {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .table-content table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-content thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  
+  .table-content thead th {
+    background: #f1f1f1;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .table-content tbody td {
+    background: white;
+  }
+  
+
+
+  

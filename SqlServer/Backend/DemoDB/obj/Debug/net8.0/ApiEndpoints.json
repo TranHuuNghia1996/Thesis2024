@@ -1,0 +1,285 @@
+[
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetAspUsers",
+    "RelativePath": "Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "Login",
+    "RelativePath": "Users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "DemoDB.Models.UserLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "AddUser",
+    "RelativePath": "Users/Adduser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newUser",
+        "Type": "DemoDB.Models.Aspnet_Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetApprovedAspUsersCount",
+    "RelativePath": "Users/ApprovedAspUsersCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetAspCountUsers",
+    "RelativePath": "Users/CountUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetFacebookUsersCount",
+    "RelativePath": "Users/FacebookUsersCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetAspUsersPage",
+    "RelativePath": "Users/GetAspUsersPage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "currentPage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "itemsPerPage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetHighFailedPasswordAttemptCount",
+    "RelativePath": "Users/HighFailedPasswordAttemptCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetLockedOutAspUsersCount",
+    "RelativePath": "Users/LockedOutAspUsersCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetUsersWithFaceBookCommentsAndMobileAliasCount",
+    "RelativePath": "Users/UsersWithFaceBookCommentsAndMobileAliasCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetUsersWithFaceBookCommentsCount",
+    "RelativePath": "Users/UsersWithFaceBookCommentsCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetUsersWithHighFailedPasswordAttempts",
+    "RelativePath": "Users/UsersWithHighFailedPasswordAttempts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetusersWithInstagramCommentsAndMobileAliasCount",
+    "RelativePath": "Users/UsersWithInstagramCommentsAndMobileAliasCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetUsersWithInstagramCommentsCount",
+    "RelativePath": "Users/UsersWithInstagramCommentsCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetUsersWithTikTokCommentsAndMobileAliasCount",
+    "RelativePath": "Users/UsersWithTikTokCommentsAndMobileAliasCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetUsersWithTikTokCommentsCount",
+    "RelativePath": "Users/UsersWithTikTokCommentsCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetUsersWithTwitterCommentsAndMobileAliasCount",
+    "RelativePath": "Users/UsersWithTwitterCommentsAndMobileAliasCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetUsersWithTwitterCommentsCount",
+    "RelativePath": "Users/UsersWithTwitterCommentsCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "CountAspnetUsers",
+    "RelativePath": "Users/count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetMembershipCountByCurrentWeek",
+    "RelativePath": "Users/membershipCountByCurrentWeek",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetMembershipCountByMonthAndYear",
+    "RelativePath": "Users/membershipCountByMonth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetMembershipCountByPastYear",
+    "RelativePath": "Users/membershipCountByPastYear",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetMembershipCountByCurrentYear",
+    "RelativePath": "Users/membershipCountByYear",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.UsersController",
+    "Method": "GetMembershipCountByYearForRecentYears",
+    "RelativePath": "Users/membershipCountByYearForRecentYears",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DemoDB.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[DemoDB.WeatherForecast, DemoDB, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
