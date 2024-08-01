@@ -1,0 +1,49 @@
+﻿@model IEnumerable<WebApplication2.Models.UserViewModel>
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 10px; /* Khoảng cách giữa các hàng */
+    }
+
+    th, td {
+        padding: 10px; /* Đệm cho mỗi ô */
+        text-align: left;
+    }
+
+    thead tr {
+        background-color: #f2f2f2;
+    }
+
+    tbody tr {
+        background-color: #fff;
+        border-radius: 5px; /* Bo góc cho mỗi hàng */
+    }
+</style>
+
+<h2>Danh sách Người Dùng</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Tên Người Dùng</th>
+            <th>Email</th>
+            <th>Tên</th>
+            <th>Họ</th>
+            <th>Ngày Sinh</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>@(user.FirstName ?? "Không rõ")</td>
+                <td>@(user.LastName ?? "Không rõ")</td>
+                <td>@(user.DateOfBirth.HasValue ? user.DateOfBirth.Value.ToShortDateString() : "Không rõ")</td>
+            </tr>
+        }
+    </tbody>
+</table>

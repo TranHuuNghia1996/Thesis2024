@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "LoginSuccess";
+}
+
+<h2>LoginSuccess</h2>
+
+@if (TempData["Username"] != null)
+{
+    <p>Welcome, @TempData["Username"].ToString()!</p>
+}
+
