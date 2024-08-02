@@ -4,12 +4,13 @@
     table {
         width: 100%;
         border-collapse: separate;
-        border-spacing: 0 10px; /* Khoảng cách giữa các hàng */
+        border-spacing: 0 10px; /* Row spacing */
     }
 
     th, td {
-        padding: 10px; /* Đệm cho mỗi ô */
+        padding: 10px; /* Padding for each cell */
         text-align: left;
+        border-bottom: 1px solid #ddd; /* Bottom border for each cell */
     }
 
     thead tr {
@@ -18,20 +19,26 @@
 
     tbody tr {
         background-color: #fff;
-        border-radius: 5px; /* Bo góc cho mỗi hàng */
+        border-radius: 5px; /* Rounded corners for each row */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
     }
+
+        tbody tr:hover {
+            background-color: #f9f9f9; /* Background color when hovering over a row */
+        }
 </style>
 
-<h2>Danh sách Người Dùng</h2>
+<h2>User List</h2>
+<p>Total Members: @ViewBag.TotalUsers</p>
 
 <table>
     <thead>
         <tr>
-            <th>Tên Người Dùng</th>
+            <th>Username</th>
             <th>Email</th>
-            <th>Tên</th>
-            <th>Họ</th>
-            <th>Ngày Sinh</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date of Birth</th>
         </tr>
     </thead>
     <tbody>
@@ -40,9 +47,9 @@
             <tr>
                 <td>@user.UserName</td>
                 <td>@user.Email</td>
-                <td>@(user.FirstName ?? "Không rõ")</td>
-                <td>@(user.LastName ?? "Không rõ")</td>
-                <td>@(user.DateOfBirth.HasValue ? user.DateOfBirth.Value.ToShortDateString() : "Không rõ")</td>
+                <td>@(user.FirstName ?? "Unknown")</td>
+                <td>@(user.LastName ?? "Unknown")</td>
+                <td>@(user.DateOfBirth.HasValue ? user.DateOfBirth.Value.ToShortDateString() : "Unknown")</td>
             </tr>
         }
     </tbody>
