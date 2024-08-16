@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WebApplication2.Models.UserViewModel>
+﻿@model IEnumerable<WebApplication2.Models.UsersViewModel>
 
 <style>
     table {
@@ -34,6 +34,7 @@
 <table>
     <thead>
         <tr>
+            <th>#</th>
             <th>Username</th>
             <th>Email</th>
             <th>First Name</th>
@@ -42,14 +43,15 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var user in Model)
+        @foreach (var user in Model.Select((user, index) => new { user, index }))
         {
             <tr>
-                <td>@user.UserName</td>
-                <td>@user.Email</td>
-                <td>@(user.FirstName ?? "Unknown")</td>
-                <td>@(user.LastName ?? "Unknown")</td>
-                <td>@(user.DateOfBirth.HasValue ? user.DateOfBirth.Value.ToShortDateString() : "Unknown")</td>
+                <td>@(user.index + 1)</td> <!-- Display row number -->
+                <td>@user.user.UserName</td>
+                <td>@user.user.Email</td>
+                <td>@(user.user.FirstName ?? "Unknown")</td>
+                <td>@(user.user.LastName ?? "Unknown")</td>
+                <td>@(user.user.DateOfBirth.HasValue ? user.user.DateOfBirth.Value.ToShortDateString() : "Unknown")</td>
             </tr>
         }
     </tbody>

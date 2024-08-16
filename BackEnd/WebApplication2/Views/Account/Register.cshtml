@@ -10,58 +10,61 @@
 {
     @Html.AntiForgeryToken()
 
+    <!-- Hiển thị tổng quát thông báo lỗi -->
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
     <div class="form-group">
         @Html.LabelFor(m => m.UserName)
         @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.UserName)
+        @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
     </div>
 
     <div class="form-group">
         @Html.LabelFor(m => m.Email)
         @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Email)
+        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
     </div>
 
     <div class="form-group">
         @Html.LabelFor(m => m.Password)
         @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.Password)
+        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
     </div>
 
     <div class="form-group">
         @Html.LabelFor(m => m.ConfirmPassword)
         @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.ConfirmPassword)
+        @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
     </div>
 
     <div class="form-group">
         @Html.LabelFor(m => m.SecurityQuestion)
         @Html.TextBoxFor(m => m.SecurityQuestion, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.SecurityQuestion)
+        @Html.ValidationMessageFor(m => m.SecurityQuestion, "", new { @class = "text-danger" })
     </div>
 
     <div class="form-group">
         @Html.LabelFor(m => m.SecurityAnswer)
         @Html.TextBoxFor(m => m.SecurityAnswer, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.SecurityAnswer)
+        @Html.ValidationMessageFor(m => m.SecurityAnswer, "", new { @class = "text-danger" })
     </div>
 
     <div class="form-group">
         @Html.LabelFor(m => m.FirstName)
         @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.FirstName)
+        @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
     </div>
 
     <div class="form-group">
         @Html.LabelFor(m => m.LastName)
         @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
-        @Html.ValidationMessageFor(m => m.LastName)
+        @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
     </div>
 
     <div class="form-group">
         @Html.LabelFor(m => m.DateOfBirth)
         @Html.TextBoxFor(m => m.DateOfBirth, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
-        @Html.ValidationMessageFor(m => m.DateOfBirth)
+        @Html.ValidationMessageFor(m => m.DateOfBirth, "", new { @class = "text-danger" })
     </div>
 
     <button type="submit" class="btn btn-primary">Register</button>

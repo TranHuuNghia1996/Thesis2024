@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Cors;
 using System.Web.Profile;
@@ -14,16 +15,15 @@ namespace WebApplication2.Controllers
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class MembershipsController : ApiController
     {
-        private List<MembershipUser> GetAllUsers()
+        private async Task<List<MembershipUser>> GetAllUsersAsync()
         {
-            return Membership.GetAllUsers().Cast<MembershipUser>().ToList();
+            return  Membership.GetAllUsers().Cast<MembershipUser>().ToList();
         }
 
-        public IHttpActionResult List()
+        public async Task<IHttpActionResult> List()
         {
-            var allUsers = GetAllUsers();
+            var allUsers = await GetAllUsersAsync();
 
-            // Lấy 10 người dùng mới nhất
             var newestUsers = allUsers.OrderByDescending(u => u.CreationDate).Take(10);
 
             var usersList = newestUsers.Select(user =>
@@ -43,27 +43,27 @@ namespace WebApplication2.Controllers
         }
 
         [HttpGet]
-        public IHttpActionResult UserCount()
+        public async Task<IHttpActionResult> UserCount()
         {
-            var allUsers = GetAllUsers();
+            var allUsers = await GetAllUsersAsync();
             int userCount = allUsers.Count;
             return Ok(new { count = userCount });
         }
 
         [HttpGet]
-        public IHttpActionResult BlockedUserCount()
+        public async Task<IHttpActionResult> BlockedUserCount()
         {
-            var allUsers = GetAllUsers();
+            var allUsers = await GetAllUsersAsync();
             int blockedUserCount = allUsers.Count(user => user.IsLockedOut);
             return Ok(new { count = blockedUserCount });
         }
 
         [HttpGet]
-        public IHttpActionResult DailyCounts(int year, int month)
+        public async Task<IHttpActionResult> DailyCounts(int year, int month)
         {
             var dailyCounts = new List<DailyCount>();
             int daysInMonth = DateTime.DaysInMonth(year, month);
-            var allUsers = GetAllUsers();
+            var allUsers = await GetAllUsersAsync();
 
             for (int day = 1; day <= daysInMonth; day++)
             {
@@ -83,12 +83,12 @@ namespace WebApplication2.Controllers
         }
 
         [HttpGet]
-        public IHttpActionResult WeeklyCounts(int year, int month)
+        public async Task<IHttpActionResult> WeeklyCounts(int year, int month)
         {
             var weeklyCounts = new List<WeeklyCount>();
             var firstDayOfMonth = new DateTime(year, month, 1);
-            var daysInMonth = DateTime.DaysInMonth(year, month);
-            var allUsers = GetAllUsers();
+            int daysInMonth = DateTime.DaysInMonth(year, month);
+            var allUsers = await GetAllUsersAsync();
 
             for (int week = 0; week < 5; week++)
             {
@@ -111,10 +111,10 @@ namespace WebApplication2.Controllers
         }
 
         [HttpGet]
-        public IHttpActionResult MonthlyCounts(int year)
+        public async Task<IHttpActionResult> MonthlyCounts(int year)
         {
             var monthlyCounts = new List<MonthlyCount>();
-            var allUsers = GetAllUsers();
+            var allUsers = await GetAllUsersAsync();
 
             for (int month = 1; month <= 12; month++)
             {
@@ -134,11 +134,11 @@ namespace WebApplication2.Controllers
         }
 
         [HttpGet]
-        public IHttpActionResult YearlyCounts()
+        public async Task<IHttpActionResult> YearlyCounts()
         {
             var yearlyCounts = new List<YearlyCount>();
             int currentYear = DateTime.Now.Year;
-            var allUsers = GetAllUsers();
+            var allUsers = await GetAllUsersAsync();
 
             for (int year = currentYear - 4; year <= currentYear; year++)
             {
@@ -158,9 +158,9 @@ namespace WebApplication2.Controllers
         }
 
         [HttpGet]
-        public IHttpActionResult PagedUsers(int pageNumber = 1, int pageSize = 100, string filter = "recent", string searchQuery = "")
+        public async Task<IHttpActionResult> PagedUsers(int pageNumber = 1, int pageSize = 100, string filter = "recent", string searchQuery = "")
         {
-            var allUsers = GetAllUsers();
+            var allUsers = await GetAllUsersAsync();
 
             // Apply filters
             switch (filter.ToLower())

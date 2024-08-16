@@ -1,0 +1,14 @@
+@{
+    ViewBag.Title = "Registration Successful";
+    var username = TempData["Username"] as string;
+}
+
+<h2>Registration Successful</h2>
+
+<div class="alert alert-success">
+    <strong>Congratulations, @username!</strong> Your account has been successfully created.
+</div>
+
+<p>You can now <a href="@Url.Action("Login", "Account")">log in</a> with your username and password.</p>
+
+<p>If you have any issues or need further assistance, feel free to <a href="@Url.Action("Contact", "Home")">contact us</a>.</p>

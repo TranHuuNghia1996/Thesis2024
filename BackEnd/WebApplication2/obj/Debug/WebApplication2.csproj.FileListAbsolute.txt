@@ -321,7 +321,11 @@ D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\roslyn\VBCS
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Antlr3.Runtime.dll
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Devart.Data.dll
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Devart.Data.PostgreSql.Design.dll
+D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Devart.Data.PostgreSql.dll
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Devart.Data.PostgreSql.Web.dll
+D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\EntityFramework.dll
+D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\EntityFramework.SqlServer.dll
+D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\EntityFramework6.Npgsql.dll
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Microsoft.Bcl.HashCode.dll
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -358,10 +362,13 @@ D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\System.Web.
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\WebActivatorEx.dll
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\WebGrease.dll
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Devart.Data.Design.dll
-D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Devart.Data.PostgreSql.dll
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\EnvDTE.dll
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\VsWebSite.Interop.dll
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Devart.Data.xml
+D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Devart.Data.PostgreSql.xml
+D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\EntityFramework.xml
+D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\EntityFramework.SqlServer.xml
+D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\EntityFramework6.Npgsql.xml
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Microsoft.Bcl.AsyncInterfaces.xml
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Microsoft.Bcl.HashCode.xml
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
@@ -394,7 +401,6 @@ D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Newtonsoft.
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\System.Web.Optimization.xml
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Antlr3.Runtime.pdb
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\bin\Devart.Data.PostgreSql.xml
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\obj\Debug\WebApplication2.csproj.AssemblyReference.cache
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\obj\Debug\WebApplication2.csproj.CoreCompileInputs.cache
 D:\Sau Dai Hoc\Thesis\Project\Thesis2024\BackEnd\WebApplication2\obj\Debug\WebAppli.0DB3FC1A.Up2Date
